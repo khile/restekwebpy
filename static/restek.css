@@ -1,0 +1,246 @@
+/* $Id$ 
+ *
+ *  Restek global stylesheet
+ *      1. Major Elements
+ *      2. Tables
+ *          2a. Alternating Rows
+ *      3. Generic Classes
+ *      4. Links
+ *      5. Navigation Sidebar
+ *      6. Special Content
+ *      7. Template Layout
+*/
+/***********************/
+/* MAIN ELEMENT STYLES */
+body { background-color: #ccc; text-align: center; }
+h1 {
+    font-size: 136%;
+    font-weight: bold;
+    color: #000033;
+    margin: 10px 10px 10px 10px;
+}
+h2 { margin: 0.5em; }
+h3 { text-align: center; }
+hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #DDD;
+}
+ul { list-style-type: disc; }
+li, blockquote { margin-left: 5%; }
+strong { font-weight: bold; }
+/* END MAIN ELEMENT STYLES */
+/***************************/
+
+/********************/
+/*  TABLE STYLES    */
+th { font-size: 122%; }
+td { text-align: center; padding: 2px; }
+td.straight { text-align: left; padding: 2px; }
+    /***************************/
+    /* ALTERNATING ROWS STYLES */
+    table.listing {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        border-spacing: 0px;
+        border-collapse: collapse;
+    }
+    table.listing td {
+       border-bottom: 1px solid #666;
+       border-right: 0px;
+       text-align: left;
+    }
+    table.listing th {
+       border-bottom: 1px solid #666;
+       text-align: left;
+       font-size: 107%;
+    }
+    table.listing tr.shade { background: #EEEEEE; }
+    table.listing tr.shade:hover { background: #DDDDDD; }
+    table.listing tr.light { background: #FFFFFF; }
+    table.listing tr.light:hover { background: #DDDDDD; }
+    table.listing tr.items:hover { background: #DDDDDD; }
+    /* END ALTERNATING ROWS STYLES */
+    /*******************************/
+/* END TABLE STYLES */
+/********************/
+
+/*************************/
+/* GENERIC STYLE CLASSES */
+.center { text-align: center; }
+.center-box { margin-left: auto; margin-right: auto; }
+.center-form {
+    text-align: center;
+    background-color: #ccc;
+    margin: 1em auto 1em auto;
+    padding: 2em;
+    width: 35%;
+}
+.red { color: red; }
+.restek-blue { color: #039; }
+.dim { background-color: #EEE; }
+.statusText {
+    font-size: 100%;
+    color: #000033;
+    font-weight: bold;
+}
+.right { text-align: right; }
+.left { text-align: left; }
+.top { vertical-align: top; }
+.middle { vertical-align: middle; }
+.bottom { vertical-align: bottom; }
+/* END GENERIC STYLE CLASSES */
+/*****************************/
+
+/***************/
+/* LINK STYLES */
+a:hover, a:visited:hover { color: black; }
+a:visited { color: blue; }
+a:link img, a:visited img { border-style: none; }
+a img { color: white } /* Only way to hide border in NS 4.x */
+/* END LINK STYLES */
+/*******************/
+
+/***************************/
+/* SPECIAL CONTENT CLASSES */
+.contentBox {
+    border: 1px solid #666;
+    background-color: white;
+    padding: 6px;
+    line-height: 120%;
+    margin: 10px 10px 10px 10px;
+}
+.pageHeader {
+    font-size: 136%;
+    font-weight: bold;
+    color: #000033;
+    margin: 10px 10px 10px 10px;
+}
+.fieldset {
+    background-color: #fff;
+    padding: 0.8em;
+    border: 1px solid #666;
+}
+.fieldset h2 {
+    position: absolute;
+    margin-top: -20px;
+    font-weight: bold;
+    font-size: 92%;
+    background: #ccc;
+    border: 1px solid #666;
+    padding: 1px 10px;
+}
+.restek-error {
+    border: 1px solid red;
+    background-color: #FDD;
+    padding: 0.5em;
+    margin: 0 1em 1em 1em;
+}
+.restek-success {
+    border: 1px solid green;
+    background-color: #DFD;
+    padding: 0.5em;
+    margin: 0 1em 1em 1em;
+}
+#restek-loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    background-color: #f5f6be;
+    font-size: 180%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Sortable tables */
+table.sortable a.sortheader {
+    background-color: white;
+    color: #039;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+/* Pagination*/
+.disabled { color: gray; }
+.pagination { float: right; font-size: 77%; }
+/* END SPECIAL CONTENT CLASSES */
+/*******************************/
+
+/**********************/
+/* HEADER/CONTENT IDS */
+#container {
+    width: 940px;
+    margin-top: 10px;
+    background-color: #eee;
+    color: #333;
+    border: 1px solid gray;
+    line-height: 130%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+#pageTop {
+    background-color: white;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#pageTop td {
+    text-align: left;
+}
+#pageTop h1 { 
+    font-size: 122%;
+    font-weight: bold;
+    color: #666666;
+    margin: 10px 5px;
+}
+#navigation {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    background-color: #999;
+    padding: 5px;
+    overflow: hidden;
+}
+#header {
+    background-color: white;
+    border-bottom: 1px solid gray;
+    margin-bottom: 1em;
+    width: 100%;
+}
+#logo {
+    height: 60px;
+    width: 227px;
+}
+#title {
+    text-align: left;
+}
+#title span {
+    font-size: 122%;
+    font-weight: bold;
+    color: #666;
+    margin-left: 2em;
+}
+#navigation form { text-align: left; margin: 0px; }
+#navigation a, #navigation a:visited { color: #eee; background-color: #999; }
+#content { margin-left: auto; margin-right: auto; background-color: #eee; }
+
+div.horiz-navbar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid gray;
+    background-color: #999;
+    padding: 0.2em;
+    overflow: hidden;
+}
+
+/* END HEADER/CONTENT IDS */
+/**************************/

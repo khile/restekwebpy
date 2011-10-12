@@ -1,0 +1,18 @@
+$def with (form, data)
+
+$var cssfiles: static/reset-min.css static/fonts-min.css static/restek.css static/buttons.css
+
+$var title: ResTek :: ResTek Abuse :: Abuse Report Form
+
+<p><strong>Jon Smith - W00000001</strong></p>
+<p><strong>IP:</strong> $:data['IP Address:'].value</p>
+<p><strong>Date:</strong> $:data['Date:'].value</p>
+
+    <fieldset> 
+        <legend><strong>Incident Info</strong></legend> 
+        <form name="incident" method="post">
+            $:form.render()
+            <input type="submit" />
+        </form>
+    </fieldset> 
+</form>

@@ -1,0 +1,86 @@
+label {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+textarea {
+    overflow: visible;
+    white-space: nowrap;
+}
+
+td input[type="text"] {
+    width: 300px;
+}
+
+table.abuse-incidentinfo {
+    width: 100%
+}
+
+table.abuse-incidentinfo td.left {
+    padding: 0em;
+}
+
+table.abuse-incidentinfo td.middle {
+    text-align: left;
+    padding: 0em;
+}
+
+table.abuse-incidentinfo td.right {
+    text-align: left;
+    padding: 0em;
+}
+
+table.abuse-deviceinfo {
+    border: thin solid #AAA;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    margin: 1em;
+    background-color: #eee;
+}
+
+table.abuse-deviceinfo>tr {
+    padding: 2px;
+}
+
+table.abuse-student {
+    width: 100%;
+    text-align: left;
+}
+
+table.abuse-student>td.left {
+    text-align: right;
+    padding-left: 2em;
+}
+
+fieldset {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    width: 93%;
+    margin: 20px;
+    padding: 0.5em;
+}
+
+legend {
+    background-color: #ccc;
+    border:1px solid #aaa;
+    font-size:92%;
+    font-weight:bold;
+    padding:1px 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+div.abuse-submit {
+    margin: 1em;
+}
+
+div.abuse-container {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    line-height: 120%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 6px;
+}

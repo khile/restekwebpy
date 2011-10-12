@@ -1,0 +1,10 @@
+$def with (form)
+
+$var cssfiles: static/reset-min.css static/fonts-min.css static/restek.css static/buttons.css
+
+$var title: ResTek :: ResTek Abuse :: Abuse Report Form: Start
+
+<form name="main" method="post"> 
+    $:form.render()
+    <input type="submit" />
+</form>

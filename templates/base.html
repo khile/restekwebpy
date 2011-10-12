@@ -1,0 +1,33 @@
+$def with (content)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+        <script type='text/javascript'> 
+            addEventListener('load', function() {setTimeout(hideAddressBar, 0);}, false);
+            function hideAddressBar() {window.scrollTo(0, 1); }
+        </script> 
+    <title>$content.title</title>
+    $if content.cssfiles:
+        $for f in content.cssfiles.split():
+            <link rel="stylesheet" href="$f" type="text/css" />
+</head>
+<body>
+    <div id="container"> 
+        <table id="header"> 
+            <tr> 
+               <td id="logo"> 
+                    <a href="start"> 
+                        <img src="static/logo.png" id="logo" alt="ResTek Logo" /> 
+                    </a> 
+                </td> 
+                <td id="title"> 
+                    <span class='headerText'>// Abuse Report Form: Start //</span> 
+                </td> 
+            </tr> 
+        </table>
+        $:content
+    </div> 
+</body>
+</html>

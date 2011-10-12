@@ -1,0 +1,50 @@
+/* $Id$ */
+
+/* Basic button definitions */
+
+button {
+    margin: 1px 1px 1px 1px;
+    border: 1px solid black;
+    font-size: 85%;
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: #039;
+    cursor: pointer;
+}
+
+a.button {
+    border: 1px solid black;
+    font-size: 85%;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 1px 3px 1px 3px;
+    display: block;
+    background-color: #039;
+    color: white;
+    height: 20px;
+}
+
+input.button {
+    border: 1px solid black;
+    font-size: 85%;
+    font-weight: normal;
+    text-align: center;
+    padding: 1px 0 3px 0;
+    width: 130px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 auto 0 auto;
+    background-color: #039;
+    color: white;
+}
+
+table.listing a.button { height: 15px; }
+.button:visited { color: white; }
+.button:hover   { background: white; color: #039; }
+
+/* Button color definitions */
+a.gray, input.gray { background-color: gray; color: white; }
+a.dark, input.dark { background-color: #000033; color: white; }
+a.white, input.white { background-color: white; color: black; }
